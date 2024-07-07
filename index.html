@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev Academy</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/home-blue_720.png" alt="WebDev Academy Logo" style="width: 40px; height: 40px;">            
+        </a>
+        <button class="navbar-toggler text-center" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center">
+        <img src="assets/images/home-blue_720.png" alt="WebDev Academy Logo" style="width: 200px; height: 200px;">
+        <h1>WebDev Academy</h1>
+        <p>The Ultimate Destination for Aspiring Web Developers</p>
+        <a href="#courses" class="btn btn-primary">Get Started</a>
+    </header>
+
+    <!-- Courses Section -->
+    <section id="courses" class="container my-5">
+        <h2>Courses</h2>
+        <div class="accordion" id="courseAccordion">
+            <div class="card">
+                <div class="card-header" id="headingHTML">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseHTML">
+                            <img src="assets/images/icons8-html-logo-48.png" alt="HTML Logo" style="width: 30px; height: 30px;"> HTML
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseHTML" class="collapse show" data-parent="#courseAccordion">
+                    <div class="card-body">
+                        Learn the basics of HTML, the fundamental building block of web development.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingCSS">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseCSS">
+                            <img src="assets/images/icons8-css-logo-48.png" alt="CSS Logo" style="width: 30px; height: 30px;"> CSS
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseCSS" class="collapse" data-parent="#courseAccordion">
+                    <div class="card-body">
+                        Dive into CSS to style and enhance the visual appeal of your websites.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingBootstrap">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBootstrap">
+                            <img src="assets/images/icons8-bootstrap-logo-48.png" alt="Bootstrap Logo" style="width: 30px; height: 30px;"> Bootstrap
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseBootstrap" class="collapse" data-parent="#courseAccordion">
+                    <div class="card-body">
+                        Master Bootstrap to build responsive, mobile-first websites easily.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingJavaScript">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseJavaScript">
+                            <img src="assets/images/icons8-javascript-48.png" alt="JavaScript Logo" style="width: 30px; height: 30px;"> JavaScript
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseJavaScript" class="collapse" data-parent="#courseAccordion">
+                    <div class="card-body">
+                        Learn JavaScript to add interactivity and dynamic elements to your websites.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="container my-5">
+        <h2>About Us</h2>
+        <p>Our mission is to provide top-notch web development education.</p>
+        <div class="card-deck">
+            <div class="card">
+                <img src="assets/images/team-member.jpg" class="card-img-top" alt="Team Member">
+                <div class="card-body">
+                    <h5 class="card-title">John Doe</h5>
+                    <p class="card-text">Lead Instructor</p>
+                    <a href="#" class="btn btn-primary">Contact</a>
+                </div>
+            </div>
+            <!-- Add more team members as needed -->
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="container my-5">
+        <h2>Testimonials</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p>"WebDev Academy is fantastic!" - Jane Smith</p>
+                </div>
+                <!-- Add more testimonials as needed -->
+            </div>
+            <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="container my-5">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2024 WebDev Academy. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
